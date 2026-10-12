@@ -28,7 +28,7 @@
 <main>
 <div class="card">
   <h1>Floussi – Privacy Policy</h1>
-  <p class="meta">Effective date: 27 September 2026 · Developer: Samir El Asri</p>
+  <p class="meta">Effective date: 12 October 2026 · Developer: Samir El Asri</p>
 
   <p class="note">Short version: your expenses stay on your phone. Floussi has no account and no servers of its own.
   Data only leaves your device when you use the Mizan assistant (sent to Google Gemini) and through the ads
@@ -37,9 +37,11 @@
   <h2>1. Data stored on your device</h2>
   <p>Everything you enter in Floussi is saved only in the app's storage on your phone:</p>
   <ul>
-    <li>expenses (amount, category, date, note), your own categories, income and spending limits;</li>
+    <li>expenses (amount, category, date, note, and how often a recurring expense repeats), your own categories,
+    income and spending limits;</li>
     <li>your settings (language, currency, theme);</li>
-    <li>the optional profile you fill in (name, short description, date of birth, city, photo);</li>
+    <li>the optional profile you fill in (name, short description, date of birth, photo);</li>
+    <li>your conversations with Mizan, if you use it;</li>
     <li>your Google Gemini API key, if you set up Mizan.</li>
   </ul>
   <p>The developer never receives this data. It is not uploaded, synced or backed up to any server by Floussi.</p>
@@ -48,14 +50,15 @@
   <p>Mizan is optional and only works after you add your own free Google Gemini API key. When you send Mizan a
   message, Floussi sends to Google's Gemini service:</p>
   <ul>
-    <li>your message and the conversation so far;</li>
+    <li>your message and the earlier messages of the same conversation;</li>
     <li>a summary of your spending: this month's total, top categories, your five most recent expenses and your income.</li>
   </ul>
   <p>This is sent directly from your phone to Google, using your own key; it does not pass through the developer.
   Google processes it under its own terms and privacy policy:
   <a href="https://ai.google.dev/gemini-api/terms" rel="noopener">Gemini API terms</a> and
   <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.
-  You can stop at any time by resetting Mizan, which deletes your key and the conversation from your phone.</p>
+  Your conversations are kept on your phone so you can continue them later. You can delete any conversation in
+  Mizan, or stop at any time by resetting Mizan, which deletes your key and all conversations from your phone.</p>
 
   <h2>3. Advertising (Google AdMob)</h2>
   <p>Floussi is free and shows a small banner ad on some screens, provided by Google AdMob. To serve and measure
@@ -77,7 +80,8 @@
   <ul>
     <li>If you choose a profile photo, Floussi asks for access to pick one image. The copy is kept inside the app on your phone.</li>
     <li>PDF reports and backup files are only created when you ask. You decide where they are saved or which app they
-    are shared with. Backup files are not encrypted, so keep them somewhere safe.</li>
+    are shared with. Backup files include your Mizan conversations but never your Gemini key. They are not
+    encrypted, so keep them somewhere safe.</li>
   </ul>
 
   <h2>5. What we don't do</h2>
@@ -90,7 +94,8 @@
   <h2>6. Deleting your data</h2>
   <p>You are always in control of your data:</p>
   <ul>
-    <li><strong>Settings → Delete everything</strong> erases all your expenses, categories, income, limits, profile and Gemini key.</li>
+    <li><strong>Settings → Delete everything</strong> erases all your expenses, recurring expenses, categories, income, limits,
+    profile, Mizan conversations and Gemini key.</li>
     <li>Uninstalling the app removes all of its data from your phone.</li>
     <li>For data held by Google (Gemini or AdMob), see the Google links above.</li>
   </ul>
